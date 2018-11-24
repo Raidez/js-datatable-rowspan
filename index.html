@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> js-datatable-rowspan </title>
+	<meta charset=utf-8>
+	<meta name=description content="plugin datatable">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<!-- lib -->
+	<link rel="stylesheet" href="lib/datatables.css">
+	<script src="lib/jquery.js"></script>
+	<script src="lib/datatables.js"></script>
+	<script src="lib/ratatable.js"></script>
+	<!-- custom -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#maTable').ratatable({
+				'info': false,
+				'paging': false,
+			});
+		});
+	</script>
+</head>
+<body>
+	<table id="maTable">
+		<thead>
+			<tr>
+				<th class="no-search"> ID </th>
+				<th> Nom </th>
+				<th> Date </th>
+				<th> Document </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-ref="0"> 0 </td>
+				<td data-ref="0"> yaourt </td>
+				<td> 23/11 </td>
+				<td> specs.pdf </td>
+			</tr>
+			<tr>
+				<td data-ref="0"> 0 </td>
+				<td data-ref="0"> yaourt </td>
+				<td> 20/10 </td>
+				<td> photo.jpg </td>
+			</tr>
+			
+			<tr>
+				<td data-ref="1"> 1 </td>
+				<td data-ref="1"> viande </td>
+				<td> 24/12 </td>
+				<td> certif.pdf </td>
+			</tr>
+			<tr>
+				<td data-ref="1"> 1 </td>
+				<td data-ref="1"> viande </td>
+				<td> 20/10 </td>
+				<td> photo.jpg </td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
